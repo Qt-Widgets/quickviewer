@@ -1331,7 +1331,7 @@
         <translation>画像(&amp;I)</translation>
     </message>
     <message>
-        <source>Large menubar arnd toolbar</source>
+        <source>Large menubar and toolbar</source>
         <translation>メニューバーとツールバーを大きくする</translation>
     </message>
     <message>
@@ -1809,6 +1809,18 @@
         <source>Randomly display in slideshow</source>
         <extracomment>The text of the check box. Slideshow usually moves to the next page in the current sorting order, but displays it in random order</extracomment>
         <translation>スライドショーでランダムに並べ替えて表示する</translation>
+    </message>
+    <message>
+        <source>QuickViewer theme</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Default</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Dark</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

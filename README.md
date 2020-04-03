@@ -4,23 +4,28 @@ QuickViewer
 
 A image/comic viewer application for Windows, Mac and Linux, it can show images very fast
 
+![github tag](https://badgen.net/github/tag/kanryu/quickviewer)
+![github downloads](https://badgen.net/github/assets-dl/kanryu/quickviewer)
+![github last commit](https://badgen.net/github/last-commit/kanryu/quickviewer)
+![opencollective backers](https://badgen.net/opencollective/backers/quickviewer)
+![opencollective contributors](https://badgen.net/opencollective/contributors/quickviewer)
+![opencollective balance](https://badgen.net/opencollective/balance/quickviewer)
+![opencollective yearly](https://badgen.net/opencollective/yearly/quickviewer)
+[![Join the chat at https://gitter.im/kanryu/quickviewer](https://badges.gitter.im/kanryu/quickviewer.svg)](https://gitter.im/kanryu/quickviewer?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## Project Website(in English / Japanese)
 
 - GitHub (Official, source code repository)
     - https://kanryu.github.io/quickviewer/
 - OSDN (Second official, in Japanese)
     - https://ja.osdn.net/projects/quickviewer/
-- GITTER (web chat about QuickViewer) [![Join the chat at https://gitter.im/kanryu/quickviewer](https://badges.gitter.im/kanryu/quickviewer.svg)](https://gitter.im/kanryu/quickviewer?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-    - https://gitter.im/kanryu/quickviewer
-
 
 ## Summary
 
  - To show images very fast (using OpenGL)
  - Portable (without installers, registries, external libraries)
  - 2 Page Spread viewing (two images once, for digital books/comics)
- - To read archives directly (zip/7z/rar/cbr/cbz)
+ - To read archives directly (zip/7z/rar/cbz/cb7/cbr/cab/tar.gz/tar.bz2/tar.xz/etc...)
  - To show images (bmp/png/jpeg/ico/dds/tga/tiff/gif)
    - Supported for modern formats(JPEG 2000/JPEG XR/WebP)
    - Supported for Animated PNG(APNG)/GIF
@@ -32,7 +37,7 @@ A image/comic viewer application for Windows, Mac and Linux, it can show images 
    - Ricoh(dng)
    - etc..
  - Can make/view/search catalog from thousands of your digital books
- - Multilingual support(English/Spanish/Simplified Chinese/Japanese/Greek)
+ - Multilingual support(English/Spanish/Simplified Chinese/French/Arabic/Russian/Japanese/Greek)
 
 ## Download
 
@@ -41,6 +46,22 @@ A image/comic viewer application for Windows, Mac and Linux, it can show images 
  - Windows zip (x86/x64)
  - Mac dmg (x64)
  - Linux AppImage (x64)
+
+## Contributing
+
+Contributions go far beyond pull requests and commits. Although we love giving you the opportunity to put your stamp on QuickViewer, we also are thrilled to receive a variety of other contributions including:
+
+- Documentation updates, enhancements, designs, or bugfixes
+- Spelling or grammar fixes
+- Additional other language translations, espetially yours, this is very easy
+- README.md corrections or redesigns
+- Adding unit, or functional tests
+- Triaging GitHub issues -- especially determining whether an issue still persists or is reproducible.
+- Blogging, speaking, tweeting
+
+We contracted with OpenCollective to allow this project to accept donations. Your one-off, or ongoing, money contributions will help us improve QuickViewer's capabilities and make it easier to use on each computer.
+
+https://opencollective.com/quickviewer
 
 ## Screenshots
 
@@ -146,10 +167,8 @@ You can do screen operations with the main menu, tool bar, mouse button, wheel, 
 
 ## Looking for contributers!
 
-- Spanish Speakers
-- French Speakers
-- Chinese Speakers
-- Mac software engeneers
+- Portuguese/Hindu/Bengali/Malay speaker
+- Mac/Linux software engeneers
 
 
 ## Report issues
@@ -167,7 +186,7 @@ Thus, your feedback is welcome at KATO Kanryu<<k.kanryu@gmail.com>>.
 
 https://github.com/kanryu/quickviewer
 
-To build from the sourcecodes, to see:　![HowToBuild.md](HowToBuild.md)
+To build from the sourcecodes, to see:　[HowToBuild.md](HowToBuild.md)
 
 
 

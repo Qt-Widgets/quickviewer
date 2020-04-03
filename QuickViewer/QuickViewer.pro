@@ -16,7 +16,7 @@ contains(DEFINES, QV_WITHOUT_OPENGL) {
     QT += opengl opengl-private
 }
 
-VERSION = 1.1.3
+VERSION = 1.1.8
 
 TARGET = QuickViewer
 TEMPLATE = app
@@ -71,6 +71,9 @@ win32 {
         }
     }
     LIBS += -luser32 -ladvapi32 -lShlwapi -loleaut32 -lole32 -luuid
+
+    # copy official 7z.dll to build/bin/
+    QMAKE_POST_LINK += $$QMAKE_COPY /B $$shell_quote($$shell_path($$PWD/../Qt7z/Qt7z/windll/$${TARGET_ARCH}/7z.dll)) $$shell_path($${DESTDIR})
 }
 linux {
     DEFINES += _UNIX
@@ -205,7 +208,8 @@ FORMS    += \
     ../AssociateFilesWithQuickViewer/fileassocdialog.ui \
     src/brightnesswindow.ui
 
-RESOURCES += toolbar.qrc
+RESOURCES += toolbar.qrc \
+    themes.qrc
 
 !CONFIG(debug, debug|release) {
     win32 {
@@ -231,6 +235,8 @@ DISTFILES += \
     translations/quickviewer_zh.qm \
     translations/quickviewer_el.qm \
     translations/quickviewer_fr.qm \
+    translations/quickviewer_ru.qm \
+    translations/quickviewer_ar.qm \
 
 # Shaders will be installed into DIST_DIR/shaders
 SHADERS += \
@@ -260,7 +266,7 @@ win32 : !CONFIG(debug, debug|release) {
     mingw {
         MY_DEFAULT_INSTALL = ../../QuickViewer-$${VERSION}-mingw-$${TARGET_ARCH}
 
-        install_target.files = $${DESTDIR}/QuickViewer.exe $${DESTDIR}/AssociateFilesWithQuickViewer.exe $${LIBDIR}/fileloader.dll
+        install_target.files = $${DESTDIR}/QuickViewer.exe $${DESTDIR}/AssociateFilesWithQuickViewer.exe $${LIBDIR}/fileloader.dll $$PWD/../Qt7z/Qt7z/windll/$${TARGET_ARCH}/7z.dll
 
         INSTALLS += install_target install_deploy_files install_translations install_assoc_icons
     } else {
@@ -270,7 +276,7 @@ win32 : !CONFIG(debug, debug|release) {
             MY_DEFAULT_INSTALL = ../../QuickViewer-$${VERSION}/$${TARGET_ARCH}
         }
 
-        install_target.files = $${DESTDIR}/QuickViewer.exe $${DESTDIR}/AssociateFilesWithQuickViewer.exe
+        install_target.files = $${DESTDIR}/QuickViewer.exe $${DESTDIR}/AssociateFilesWithQuickViewer.exe $$PWD/../Qt7z/Qt7z/windll/$${TARGET_ARCH}/7z.dll
 
         install_qrawspeed.path = $${MY_DEFAULT_INSTALL}/imageformats
         install_qrawspeed.files = \
@@ -311,6 +317,8 @@ win32 : !CONFIG(debug, debug|release) {
         $${PWD}/translations/quickviewer_zh.qm \
         $${PWD}/translations/quickviewer_el.qm \
         $${PWD}/translations/quickviewer_fr.qm \
+        $${PWD}/translations/quickviewer_ru.qm \
+        $${PWD}/translations/quickviewer_ar.qm \
         $${PWD}/translations/qt_el.qm \
 
     install_translations2.path = $${MY_DEFAULT_INSTALL}/translations
@@ -380,6 +388,8 @@ linux : !CONFIG(debug, debug|release) : contains(DEFINES, QV_PORTABLE) {
         $${PWD}/translations/quickviewer_zh.qm \
         $${PWD}/translations/quickviewer_el.qm \
         $${PWD}/translations/quickviewer_fr.qm \
+        $${PWD}/translations/quickviewer_ru.qm \
+        $${PWD}/translations/quickviewer_ar.qm \
         $${PWD}/translations/qt_el.qm \
         $$[QT_INSTALL_TRANSLATIONS]/qt_zh_CN.qm \
 
@@ -450,6 +460,8 @@ linux : !CONFIG(debug, debug|release) : !contains(DEFINES, QV_PORTABLE) {
         $${PWD}/translations/quickviewer_zh.qm \
         $${PWD}/translations/quickviewer_el.qm \
         $${PWD}/translations/quickviewer_fr.qm \
+        $${PWD}/translations/quickviewer_ru.qm \
+        $${PWD}/translations/quickviewer_ar.qm \
         $${PWD}/translations/qt_el.qm
 
     install_assoc_icons.path = $${QV_SHARED_PATH}/QuickViewer/icons
@@ -495,6 +507,8 @@ macos : !CONFIG(debug, debug|release) {
         $${PWD}/translations/quickviewer_zh.qm \
         $${PWD}/translations/quickviewer_el.qm \
         $${PWD}/translations/quickviewer_fr.qm \
+        $${PWD}/translations/quickviewer_ru.qm \
+        $${PWD}/translations/quickviewer_ar.qm \
         $${PWD}/translations/qt_el.qm \
         $$[QT_INSTALL_TRANSLATIONS]/qt_zh_CN.qm \
 

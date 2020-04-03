@@ -1656,7 +1656,7 @@
         <translation>&amp;Image</translation>
     </message>
     <message>
-        <source>Large menubar arnd toolbar</source>
+        <source>Large menubar and toolbar</source>
         <translation>Grande barre d&apos;outils et barre de menu</translation>
     </message>
     <message>
@@ -2289,6 +2289,18 @@
         <source>Activate the window when an image dropped on</source>
         <comment>Check box to activate the window when an image dropped on</comment>
         <translation>Activer la fenêtre lorsqu&apos;une image est déposée</translation>
+    </message>
+    <message>
+        <source>QuickViewer theme</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Default</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Dark</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

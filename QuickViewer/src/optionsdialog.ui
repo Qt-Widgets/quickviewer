@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>672</width>
-    <height>543</height>
+    <width>679</width>
+    <height>564</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,6 @@
    <string notr="true">QGroupBox {
   border: 1px solid gray;
   border-radius: 3px;
-  padding: 10px 5px 5px 5px;
 }
 </string>
   </property>
@@ -51,15 +50,15 @@
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>628</width>
-            <height>451</height>
+            <width>635</width>
+            <height>472</height>
            </rect>
           </property>
           <layout class="QVBoxLayout" name="verticalLayout_9">
            <item>
             <widget class="QFrame" name="frame">
              <property name="sizePolicy">
-              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
                <horstretch>0</horstretch>
                <verstretch>0</verstretch>
               </sizepolicy>
@@ -145,7 +144,7 @@
                  <string>Increasing the value increases the display time of per image</string>
                 </property>
                 <property name="minimum">
-                 <number>1000</number>
+                 <number>500</number>
                 </property>
                 <property name="maximum">
                  <number>20000</number>
@@ -243,6 +242,33 @@
                 <property name="text">
                  <string extracomment="The text of the check box. Slideshow usually moves to the next page in the current sorting order, but displays it in random order">Randomly display in slideshow</string>
                 </property>
+               </widget>
+              </item>
+              <item row="11" column="0">
+               <widget class="QLabel" name="labelThemeSelector">
+                <property name="text">
+                 <string>QuickViewer theme</string>
+                </property>
+               </widget>
+              </item>
+              <item row="11" column="1">
+               <widget class="QComboBox" name="comboBoxThemeSelector">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Default</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Dark</string>
+                 </property>
+                </item>
                </widget>
               </item>
              </layout>
@@ -376,10 +402,13 @@
        <item>
         <widget class="QGroupBox" name="groupBox_5">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
          </property>
          <property name="title">
           <string>Hide permanently</string>
@@ -411,6 +440,12 @@
        </item>
        <item>
         <widget class="QGroupBox" name="groupBox_6">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="title">
           <string>Hide in full screen</string>
          </property>
@@ -451,10 +486,13 @@
          <property name="orientation">
           <enum>Qt::Vertical</enum>
          </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Preferred</enum>
+         </property>
          <property name="sizeHint" stdset="0">
           <size>
            <width>20</width>
-           <height>151</height>
+           <height>121</height>
           </size>
          </property>
         </spacer>
@@ -476,8 +514,8 @@
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>628</width>
-            <height>451</height>
+            <width>635</width>
+            <height>472</height>
            </rect>
           </property>
           <layout class="QVBoxLayout" name="verticalLayout_8">

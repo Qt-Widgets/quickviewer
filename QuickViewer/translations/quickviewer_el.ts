@@ -1331,7 +1331,7 @@
         <translation>&amp;Εικόνα</translation>
     </message>
     <message>
-        <source>Large menubar arnd toolbar</source>
+        <source>Large menubar and toolbar</source>
         <translation>Μεγάλες γραμμές μενού και εργαλείων</translation>
     </message>
     <message>
@@ -1814,6 +1814,18 @@
     <message>
         <source>Randomly display in slideshow</source>
         <extracomment>The text of the check box. Slideshow usually moves to the next page in the current sorting order, but displays it in random order</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>QuickViewer theme</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Default</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Dark</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
